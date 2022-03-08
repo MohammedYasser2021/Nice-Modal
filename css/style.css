@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header.hero{
+    background-image: url(../images/portfolio-2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.banner{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #aaa;
+    padding: 40px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner h1{
+    margin-bottom: 30px;
+}
+.banner .modal-btn{
+    padding: 10px 20px;
+    width: 50%;
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #0D83BA;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.modal-container{
+    width: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #aaa;
+    padding: 50px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.modal-container .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: crimson;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.modal-container .close:hover{
+    transform: rotate(1turn);
+}
